@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link type="text/css" href="./dist/output.css" rel="stylesheet">
+    <link type="text/css" href="./css/fonts.css" rel="stylesheet">
+</head>
+<body class="dark:bg-soft-black" id="profile">
+    <nav class="flex items-center sticky top-0 justify-between h-12 bg-black w-full px-2 z-30 max-w-screen">
+        <div class="flex justify-end items-center space-x-2">
+            <div class="text-yellow-400 dark:text-white material-icons">brightness_7</div>
+            <input type="checkbox" name="" id="checkbox" class="hidden" />
+            <label for="checkbox" class="cursor-pointer">
+                <div class="w-10 h-5 flex items-center bg-gray-300 dark:bg-gray-800 transition rounded-full px-1">
+                    <div class="w-4 h-4 bg-white rounded-full shadow slider"></div>
+                </div>
+            </label>
+            <div class="dark:text-yellow-400 text-white material-icons">brightness_3</div>
+        </div>
+        <div class="flex gap-4 mx-4 hidden md:block">
+            <a href="#profile" class="text-white p-3 font-ibmplex">Profile</a>
+            <a href="#project" class="text-white p-3 font-ibmplex">Projects</a>
+            <a href="#contact" class="text-white p-3 font-ibmplex">Contact</a>
+        </div>
+        <i class="material-icons text-white cursor-pointer md:hidden" id="burger">dehaze</i>
+    </nav>
+    <div class="flex flex-col items-center bg-black sticky z-30 md:hidden" id="navbar">
+        <div class="md:hidden" id="topDivider"></div>
+        <a href="#profile" id="navbarElement" class="transition flex grow h-0 truncate bg-black text-white items-center font-synonym cursor-pointer justify-center text-center">Profile</a>
+        <a href="#project" id="navbarElement" class="transition flex grow h-0 truncate bg-black text-white items-center font-synonym cursor-pointer justify-center text-center">Projects</a>
+        <a href="#contact" id="navbarElement" class="transition flex grow h-0 truncate bg-black text-white items-center font-synonym cursor-pointer justify-center text-center">Contact</a>
+    </div>
+    
+    <div class="profile-responsive-mobile lg:profile-responsive absolute h-60 w-full bg-black z-0"></div>
+    <div class="h-60 my-5 relative lg:hidden">
+        <div class="absolute w-36 h-48 md:h-56  inset-0 m-auto text-center z-20"><img class="object-cover h-full w-full" src="./assets/portrait.webp" alt=""></div>
+        <div class="absolute w-36 h-48 md:h-56  inset-0 m-auto top-3 left-3 text-center bg-teal-400 z-10"></div>
+    </div>
+
+    <div class="h-72 w-full lg:mb-5 hidden my-5 lg:flex lg:flex-row max-w-screen">
+        <div class="lr-width dark:bg-soft-black shrink-0 bg-white"></div>
+        <div class="flex mx-auto lg:mx-5 justify-center">
+            <div class="relative shrink-0 h-full mx-5 w-48">
+                <div class="profile-image h-full absolute w-48 z-20"><img class="object-cover h-full w-full" src="./assets/portrait.webp" alt=""></div>
+                <div class="absolute w-48 h-full top-2 left-2 bg-teal-400"></div>
+            </div>
+            <div class="h-full w-fit profile-info flex flex-col font-sourceserif">
+                <div class="text-3xl dark:text-white p-2 w-fit">Aric Hernando</div>
+                <div class="font-ibmplex dark:bg-hard-black bg-black text-white mx-2 grow-0 w-fit text-xl p-1 mb-3">Software Engineer</div>
+                <div class="text-lg dark:text-white px-2 grow-0">Hello there! I'm a final year Computer Science student currently studying at the University of Wollongong.
+
+                </div>
+            </div>
+        </div>
+        <div class="lr-width dark:bg-soft-black shrink-0 bg-white"></div>
+    </div>
+        
+    <div class="md:w-full md:flex md:flex-row md:pt-5 max-w-screen">
+        <div class="lr-width dark:bg-soft-black shrink-0 bg-white"></div>
+        <div>
+            <!-- Profile section -->
+            <section class="lg:hidden mb-5">
+                <div class="font-sourceserif dark:text-white text-3xl text-center w-full">Aric Hernando</div>
+                <div class="relative h-12">
+                    <div class="font-ibmplex text-xl absolute left-0 right-0 z-10 p-0.5 text-center w-fit mx-auto my-2 text-white bg-black">Software Engineer</div>
+                    <div class="font-ibmplex text-xl absolute left-2 right-0 top-1 z-0 p-0.5 text-center w-fit 0 mx-auto my-2 text-teal-400 bg-teal-400">Software Engineer</div>
+                </div>
+                <div class="text-justify text-lg px-2 pt-2 pb-5 font-synonym dark:text-white">
+                    Hello there! I'm a final year Computer Science student currently studying at the University of Wollongong.
+                </div>
+            </section>
+
+            <!-- Project section -->
+            <h1 id="project" class="font-ibmplex text-xl mt-5 mx-2 dark:text-white md:m-0 p-2 dark:border-white dark:bg-hard-black border-black border-2 inline font-bold">Projects</h1>
+            <div class="md:inline-grid md:grid-cols-2 gap-4 mt-5 mb-5">
+                <!-- TODO : Add C++ dijkstra visualization project, BSSC Election, RasPi Audio Player -->
+                <section class="md:flex md:flex-col gap-4">
+                    <article class="flex flex-col">
+                        <div class="flex flex-col lg:p-5 lg:flex-row w-full bg-black dark:bg-hard-black">
+                            <div class="h-56 w-full lg:w-48 shrink-0 relative">
+                                <div class="bg-gray-300 absolute m-5 lg:w-48 lg:m-0 inset-0 z-10"><img class="w-full h-full object-cover" src="assets/gyf.webp" alt=""></div>
+                                <div class="bg-gyf absolute mt-7 ml-7 mb-3 mr-3 inset-0  lg:m-0 lg:top-2 lg:left-2 lg:w-48 lg:h-full z-0"></div>
+                            </div>
+                            <div class="lg:flex lg:flex-col lg:justify-center">
+                                <div class="bg-black font-sourceserif text-lg px-5 lg:text-3xl text-white font-bold dark:bg-hard-black hover:text-black hover:bg-white dark:hover:bg-white"><a href="https://gameyourfit.com">Game Your Fit</a></div>
+                                <div class="bg-black font-synonym text-xs px-5 pb-3 text-gyf dark:bg-hard-black">ANDROID FIREBASE WEBRTC KOTLIN</div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col w-fit">
+                            <div class="font-synonym border border-solid border-4 border-black text-lg px-5 py-3 text-black text-justify dark:text-white">
+                                Top 10 finalist for Google Solution Challenge 2021. <a class="text-white bg-black" href="https://github.com/SolusiAnakBangsa/Game-Your-Fit">Game Your Fit</a> is a workout application that's designed to motivate users to exercise more through gamification.
+                                Users can open the website and control the player character using sensors on their phone. The user's movement will be tracked and sent as an input to the browser. 
+                                <br>
+                                <br>
+                                This project was a 6-month long marathon of us learning many new technologies.
+                                I was responsible for designing and coding the Android UI and backend APIs. 
+                                
+                                One of the unique challenge that we faced in this project is our relatively small team size. Our big scope combined meant that every member had to wear many hats and dip their toes
+                                in different parts of the projects. Other than the Android application, I also helped other members in designing the WebRTC interface to communicate between devices.
+                            </div>
+                        </div>
+                    </article>
+                    <article class="flex flex-col">
+                        <div class="flex flex-col lg:p-5 lg:flex-row w-full bg-black dark:bg-hard-black">
+                            <div class="h-56 w-full lg:w-48 shrink-0 relative">
+                                <div class="bg-gray-300 absolute m-5 lg:w-48 lg:m-0 inset-0 z-10"><img class="w-full h-full object-cover" src="assets/chess.webp" alt=""></div>
+                                <div class="bg-yellow-400 absolute mt-7 ml-7 mb-3 mr-3 inset-0  lg:m-0 lg:top-2 lg:left-2 lg:w-48 lg:h-full z-0"></div>
+                            </div>
+                            <div class="lg:flex lg:flex-col lg:justify-center">
+                                <div class="bg-black dark:bg-hard-black font-sourceserif text-lg px-5 lg:text-3xl hover:bg-white dark:hover:bg-white hover:text-black text-white font-bold"><a href="https://github.com/Aric-prog/Chess-Webapp">Multiplayer Chess</a></div>
+                                <div class="bg-black dark:bg-hard-black font-synonym text-xs px-5 pb-3 text-yellow-400">NODEJS REACT SOCKET.IO FIREBASE</div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col w-fit">
+                            <div class="font-synonym border dark:text-white border-solid border-4 border-black dark:border-hard-black text-lg px-5 py-3 text-black text-justify">
+                                An online chess website implemented using Firebase authentication and Socket.io. I was responsible for developing the general flow of communication within the application,
+                                integrating between React components and the movement of the chessboard itself. It was my first hands-on experience with developing a full-stack project and while there were a lot of things I wanted to improve, it was a good learning opportunity.
+                            </div>
+                        </div>
+                    </article>
+                </section>
+                <section class="md:flex md:flex-col gap-4">
+                    <article class="flex flex-col">
+                        <div class="flex flex-col lg:p-5 lg:flex-row w-full bg-black dark:bg-hard-black">
+                            <div class="h-56 w-full lg:w-48 shrink-0 relative">
+                                <div class="bg-gray-300 absolute m-5 lg:w-48 lg:m-0 inset-0 z-10"><img class="w-full h-full object-cover" src="assets/wr.webp" alt=""></div>
+                                <div class="bg-todo absolute mt-7 ml-7 mb-3 mr-3 inset-0  lg:m-0 lg:top-2 lg:left-2 lg:w-48 lg:h-full z-0"></div>
+                            </div>
+                            <div class="lg:flex lg:flex-col lg:justify-center">
+                                <div class="bg-black font-sourceserif dark:bg-hard-black text-lg px-5 lg:text-3xl text-white font-bold hover:text-black hover:bg-white dark:hover:bg-white"><a href="https://github.com/Project-Lily/wonder-kotlin">Wonder Reader</a></div>
+                                <div class="bg-black font-synonym dark:bg-hard-black text-xs px-5 pb-3 text-wr">TYPESCRIPT ANDROID GCP C++ NGINX</div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col w-fit">
+                            <div class="font-synonym border border-solid border-4 border-black text-lg px-5 py-3 text-black text-justify dark:text-white">
+                                <a class="bg-black text-white" href="https://developers.google.com/community/gdsc-solution-challenge/winners">Top 10</a> finalist for Google Solution Challenge 2023. A tool to teach braille to visually impaired people. 
+                                This project is composed of both hardware and software, all of it custom-made by our team. With this device, a teacher could help a student learn braille using the interface of their phone, where the student would then respond using the device.
+                                <br>
+                                <br>
+                                One of the project with the most changes in its lifespan. Originally, it started as a hardware to interface with the internet using braille. It then changed to a web-based teaching device, ending up on an offline Android application. 
+                                <br>
+                                The reason for these changes is due to our team's insistence on fulfilling a real-world need using the application. We repeatedly tested this on the local visually impaired organization, making sure we were on the right track.
+                                <br>
+                                <br>
+                                Overall, the most fulfilling project that I have ever done, with the most amount of repositories.
+                            </div>
+                        </div>
+                    </article>
+                    <article class="flex flex-col">
+                        <div class="flex flex-col lg:p-5 lg:flex-row w-full bg-black dark:bg-hard-black">
+                            <div class="h-56 w-full lg:w-48 shrink-0 relative">
+                                <div class="bg-gray-300 absolute m-5 lg:w-48 lg:m-0 inset-0 z-10"><img class="w-full h-full object-cover" src="assets/todo.webp" alt=""></div>
+                                <div class="bg-todo absolute mt-7 ml-7 mb-3 mr-3 inset-0  lg:m-0 lg:top-2 lg:left-2 lg:w-48 lg:h-full z-0"></div>
+                            </div>
+                            <div class="lg:flex lg:flex-col lg:justify-center">
+                                <div class="bg-black font-sourceserif dark:bg-hard-black text-lg px-5 lg:text-3xl text-white font-bold hover:text-black hover:bg-white dark:hover:bg-white"><a href="https://github.com/Aric-prog/Translate-Inator">Translate-inator</a></div>
+                                <div class="bg-black font-synonym dark:bg-hard-black text-xs px-5 pb-3 text-todo">TYPESCRIPT ANGULAR GCP DOCKER NGINX</div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col w-fit">
+                            <div class="font-synonym border border-solid border-4 border-black text-lg px-5 py-3 text-black text-justify dark:text-white">
+                                Full-stack project of a note taking web application with a translation function. It is currently deployed on <a class="text-white bg-black" href="https://todo-translator.arichernando.com">this</a> webpage. Deployed on a Google Compute Engine using Docker compose and nginx reverse proxy. 
+                                This is a solo project that uses Google's Cloud Translation API. The backend is created using Typescript and Node.js, while the frontend uses Angular with rxjs. Deployment is handled with Github Action CI/CD. 
+                                <br>
+                                <br>
+                                This project posed a different type of challenge in how I approached my development. I went into it with the mindset of "This should be maintainable by a complete stranger", which proved to be more difficult than I thought. 
+                                Coding the functionality itself was not a problem, but everything surrounding it had to be easy to modify and should allow customization for different environments (production, development, etc.). 
+                                <br>
+                                <br>
+                                The final result of this 13-day sprint is a full-stack application that can be run with two docker commands (assuming you have provided the correct .env variable)
+                                <br>
+                                <br>
+                                <pre>docker compose -f ./docker-compose.setup.yaml up -d</pre>
+                                <pre>docker compose up -d</pre>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="flex flex-col">
+                        <div class="flex flex-col lg:p-5 lg:flex-row w-full bg-black dark:bg-hard-black">
+                            <div class="h-56 w-full lg:w-48 shrink-0 relative">
+                                <div class="bg-gray-300 absolute m-5 lg:w-48 lg:m-0 inset-0 z-10"><img class="w-full h-full object-cover" src="assets/spd.webp" alt=""></div>
+                                <div class="bg-spd absolute mt-7 ml-7 mb-3 mr-3 inset-0  lg:m-0 lg:top-2 lg:left-2 lg:w-48 lg:h-full z-0"></div>
+                            </div>
+                            <div class="lg:flex lg:flex-col lg:justify-center">
+                                <div class="bg-black font-sourceserif dark:bg-hard-black text-lg px-5 lg:text-3xl text-white font-bold hover:text-black hover:bg-white dark:hover:bg-white"><a href="https://github.com/Aric-prog/Spaceship-Disaster"> Spaceship Disaster</a></div>
+                                <div class="bg-black font-synonym dark:bg-hard-black text-xs px-5 pb-3 text-spd">BABYLONJS REDIS NODEJS</div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col w-fit">
+                            <div class="font-synonym border border-solid border-4 border-black text-lg px-5 py-3 text-black text-justify dark:text-white">
+                                A web-based game made in BabylonJS with NodeJS as it's backend. Development wise, this game presents a unique challenge in the way that we would need to store highly mutable data that need to be transmitted quickly to the client. For this, we decided to use Redis in combination with Socket.io to achieve this.  
+                            </div>
+                        </div>
+                    </article>
+                </section>
+            </div>
+
+            <!-- Contact section -->
+            <div id="contact" class="font-ibmplex mx-2 md:m-0 text-xl mt-5 p-2 border-black border-2 inline dark:bg-hard-black dark:border-white dark:text-white font-bold">Contact</div>
+            <section class="lg:flex">
+                <form method="POST" action="/api/submit"  class="py-5 mx-2 md:m-0 flex flex-col gap-3 grow">
+                    <input type="text" name="name" placeholder="NAME" class="font-ibmplex dark:bg-soft-black border-black dark:border-white dark:bg-hard-black dark:text-white border-2 py-2 px-2">
+                    <input type="text" name="email" placeholder="EMAIL" class="font-ibmplex dark:bg-soft-black border-black dark:border-white dark:bg-hard-black dark:text-white border-2 py-2 px-2">
+                    <textarea placeholder="CONTENT" name="content" class="font-ibmplex dark:bg-soft-black border-black dark:border-white dark:bg-hard-black dark:text-white border-2 py-2 px-2 flex min-h-10"></textarea>
+                    <div class="flex justify-end">
+                        <input type="submit" value="SUBMIT" class="font-ibmplex dark:bg-black cursor-pointer border-2 border-black dark:border-white dark:bg-hard-black dark:text-white font-bold py-2 px-2 w-min">
+                    </div>
+                </form>
+                <div class="py-5 mx-2 flex flex-col  justify-start shrink-0">
+                    <div class="items-center flex flex-col mx-5">
+                        <div class="material-icons dark:text-white py-5 text-3xl">mail</div>
+                        <div class="font-ibmplex dark:text-white px-2 py-2 text-2xl">hernandoaric@gmail.com</div>
+                    </div>
+                    <div class="items-center flex flex-col mx-5">
+                        <div class="material-icons dark:text-white py-5 text-3xl">phone</div>
+                        <div class="font-ibmplex dark:text-white px-2 py-2 text-2xl">0493506102</div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="lr-width dark:bg-soft-black shrink-0 bg-white"></div>
+    </div>
+    
+    <footer class="w-full bg-black h-48">
+        <div class="bg-white dark:bg-soft-black w-full h-full profile-responsive-mobile lg:profile-responsive"></div>
+    </footer>
+    <script src="./js/index.js"></script>
+</body>
+</html>
