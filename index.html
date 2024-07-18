@@ -103,7 +103,7 @@
                         </div>
                         <div class="flex flex-col w-fit">
                             <div class="font-synonym border border-solid border-4 border-black text-lg px-5 py-3 text-black text-justify dark:text-white">
-                                Top 10 finalist for Google Solution Challenge 2021. <a class="text-white bg-black" href="https://github.com/SolusiAnakBangsa/Game-Your-Fit">Game Your Fit</a> is a workout application that's designed to motivate users to exercise more through gamification.
+                                Top 10 finalist for Google Solution Challenge 2021. <a class="text-white bg-black dark:bg-white dark:text-black" href="https://github.com/SolusiAnakBangsa/Game-Your-Fit">Game Your Fit</a> is a workout application that's designed to motivate users to exercise more through gamification.
                                 Users can open the website and control the player character using sensors on their phone. The user's movement will be tracked and sent as an input to the browser. 
                                 <br>
                                 <br>
@@ -198,7 +198,7 @@
                         <div class="flex flex-col lg:p-5 lg:flex-row w-full bg-black dark:bg-hard-black">
                             <div class="h-56 w-full lg:w-48 shrink-0 relative">
                                 <div class="bg-gray-300 absolute m-5 lg:w-48 lg:m-0 inset-0 z-10"><img class="w-full h-full object-cover" src="assets/wr.webp" alt=""></div>
-                                <div class="bg-todo absolute mt-7 ml-7 mb-3 mr-3 inset-0  lg:m-0 lg:top-2 lg:left-2 lg:w-48 lg:h-full z-0"></div>
+                                <div class="bg-wr absolute mt-7 ml-7 mb-3 mr-3 inset-0  lg:m-0 lg:top-2 lg:left-2 lg:w-48 lg:h-full z-0"></div>
                             </div>
                             <div class="lg:flex lg:flex-col lg:justify-center">
                                 <div>
@@ -215,7 +215,7 @@
                         </div>
                         <div class="flex flex-col w-fit">
                             <div class="font-synonym border border-solid border-4 border-black text-lg px-5 py-3 text-black text-justify dark:text-white">
-                                <a class="bg-black text-white" href="https://developers.google.com/community/gdsc-solution-challenge/winners">Top 3</a> winner for Google Solution Challenge 2023. A tool to teach braille to visually impaired people. 
+                                <a class="bg-black text-white dark:bg-white dark:text-black" href="https://developers.google.com/community/gdsc-solution-challenge/winners">Top 3</a> winner for Google Solution Challenge 2023. A tool to teach braille to visually impaired people. 
                                 This project is composed of both hardware and software, all of it custom-made by our team. With this device, a teacher could help a student learn braille using the interface of their phone, where the student would then respond using the device.
                                 <br>
                                 <br>
@@ -225,6 +225,41 @@
                                 <br>
                                 <br>
                                 Overall, the most fulfilling project that I have ever done, with the most amount of repositories.
+                            </div>
+                        </div>
+                    </article>
+                    <article class="flex flex-col">
+                        <div class="flex flex-col lg:p-5 lg:flex-row w-full bg-black dark:bg-hard-black">
+                            <div class="h-56 w-full lg:w-48 shrink-0 relative">
+                                <div class="bg-gray-300 absolute m-5 lg:w-48 lg:m-0 inset-0 z-10"><img class="w-full h-full object-cover" src="assets/todo.webp" alt=""></div>
+                                <div class="bg-todo absolute mt-7 ml-7 mb-3 mr-3 inset-0  lg:m-0 lg:top-2 lg:left-2 lg:w-48 lg:h-full z-0"></div>
+                            </div>
+                            <div class="lg:flex lg:flex-col lg:justify-center">
+                                <div>
+                                    <div class="bg-black font-sourceserif dark:bg-hard-black text-lg px-5 lg:text-3xl text-white font-bold bg-inf ">Influence ID</div>
+                                </div>
+                                <div class="bg-black font-synonym dark:bg-hard-black text-xs px-5 pb-3 text-inf">GOLANG GRPC KUBERNETES</div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col w-fit">
+                            <div class="font-synonym border border-solid border-4 border-black text-lg px-5 py-3 text-black text-justify dark:text-white">
+                                3-month internship and my first experience working in a large codebase. For more information regarding the company, click <a class="text-white bg-black dark:bg-white dark:text-black" href="https://influence.id/tentang-kami/">here</a>.
+                                I was brought on to the company to tackle two objectives. One, try to learn as much as possible and two, start the effort in migrating the architecture to a distributed one. 
+                                At that time, the codebase was monolithic and was getting somewhat bloated (some files reaching 23k LOC). To alleviate this, I was tasked with isolating one of the smaller module into a microservice and a decision was made to extract 
+                                email functionality from the main server.
+                                <br>   
+                                <br>
+                                While it may seem simple, the refactoring effort to implement that is not trivial. The process of sending emails were chaotic and non-uniform, with files implementing their own email functions and templates. 
+                                I first started by refactoring all of these functions into one single file and continue from there. The large codebase and my lacking knowledge in an actual working environment proved this to not be an easy task, 
+                                but here's what I managed to achieve at the end of my internship:
+                                <br>
+                                <br>
+                                <li class="ml-5">Contained email functionalities into it's own repository, complete with CI/CD and build scripts adherent to company convention.</li>
+                                <li class="ml-5">Deployed Kubernetes cluster with Kong API gateway and monitoring.</li>
+                                <li class="ml-5">Implemented gRPC and protobuf contracts for the microservice.</li>
+                                
+                                Overall I am quite proud with what I have achieved in this internship. While the duration itself was quite short, the team's willingness to trust me with important resources 
+                                allowed me to grow as a developer. I consider this a significant learning experience for my journey as a developer.
                             </div>
                         </div>
                     </article>

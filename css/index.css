@@ -37,6 +37,13 @@
 .text-gyf{
     color: #f57c00 ;
 }
+.text-inf{
+    color: #359FD9 ;
+}
+.bg-inf{
+    background-color: #359FD9;
+}
+
 .text-paper{
     color: #256F3D ;
 }
