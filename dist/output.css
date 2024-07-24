@@ -1191,6 +1191,11 @@ textarea{
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.dark\:text-black:is(.dark *) {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
 .dark\:text-white:is(.dark *) {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -1199,11 +1204,6 @@ textarea{
 .dark\:text-yellow-400:is(.dark *) {
   --tw-text-opacity: 1;
   color: rgb(250 204 21 / var(--tw-text-opacity));
-}
-
-.dark\:text-black:is(.dark *) {
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .dark\:bg-soft-black:is(.dark *){
@@ -1221,6 +1221,11 @@ textarea{
 .dark\:hover\:bg-white:hover:is(.dark *) {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.dark\:hover\:text-black:hover:is(.dark *) {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 @media (min-width: 768px) {
